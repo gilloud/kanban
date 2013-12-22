@@ -1,0 +1,55 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    color : grey;
+}
+.kanban-container {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.kanban {
+    border : 2px solid  grey;
+    margin : 2px;
+    padding : 2px; 
+    width : 100%;
+    margin-top:20px;
+}
+
+.kanban td {
+    border : 5px solid grey;
+    margin : 5px;
+    padding : 5px;
+    vertical-align: top;
+}
+.kanban th {
+    border : 5px solid grey;
+
+}
+
+.task {
+    border : 1px dashed grey;
+    background-color : grey;
+    padding : 5px;
+    margin-top : 7px;
+    border-radius: 10px;
+}
+.task .owner {
+    font-weight: bold;
+}
+.task .description {
+    font-size: 0.8em;
+}
+
+.task h4,.task p {
+    color : white;
+}
+
+.task-menu, .task-menu a {
+    color : white;
+    text-align: right;
+}

@@ -1,0 +1,22 @@
+  <h1>Kanban testing tool !</h1>
+<table class="kanban">
+    <tr>
+        <th ng-repeat="stepsObject in stepsObjects | orderBy:'taskOrder'">{{stepsObject.title}}</th>
+    </tr>
+    <tr>
+        <td  ng-repeat="stepsObject in stepsObjects | orderBy:'taskOrder'">
+
+
+            <div class="task" ng-repeat="object in stepsObject.value">
+                <h4>{{object.title}}</h4>
+                <p class="description">{{object.description}}</p>
+                <p class="owner">{{object.owner}}</p>
+                <p class="task-menu">
+                    <a href="" ng-if="hasLeft(stepsObject.taskOrder)" ng-click="goLeft(object.id,stepsObject.taskOrder)">&#10096;</a> 
+                    <a href="" ng-click="goElement(object.id)">&#9733;</a>
+                   <a href="" ng-if="hasRight(stepsObject.taskOrder)" ng-click="goRight(object.id,stepsObject.taskOrder)">&#10097;</a> 
+               </p>
+            </div>
+        </td>
+    </tr>
+</table>
