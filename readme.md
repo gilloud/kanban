@@ -2,7 +2,7 @@
 
 Welcome to a personnal kanban frontend layout.
 
-(https://github.com/gilloud/kanban/blob/master/notes/Capture2-210m.PNG "Kanban")
+[Screenshoot kanban](https://github.com/gilloud/kanban/blob/master/notes/Capture2-210m.PNG)
  
 ##Here :##
 - No data management functionnality, you need to adapt it to your needs.
