@@ -32,7 +32,6 @@ h1 {
 }
 
 .task {
-    border : 1px dashed grey;
     background-color : grey;
     padding : 5px;
     margin-top : 7px;
