@@ -78,13 +78,7 @@ angular.module('kanbanApp').service('kanbanService', function () {
             }, {
                 'title': 'integration',
                 'taskOrder': '6',
-                'value': [ {
-                    'id': '135',
-                    'description': 'Je teste une petite description courte... Je teste une deuxième description courte... Je teste une 3ème description courte...',
-
-                    'title': 'Review of a little piece of code',
-                    'owner': 'gilles'
-                }]
+                'value': [ ]
             }, {
                 'title': 'done',
                 'taskOrder': '7',
@@ -123,6 +117,10 @@ angular.module('kanbanApp')
         ];
         $scope.stepsObjects = kanbanService.getTasks();
 
+        $scope.colWidth = function(){
+            return 100/$scope.stepsObjects.length;
+        }
+
         $scope.goLeft = function (id, pos) {
             alert('Item ' + id + ' has been moved left ' + pos);
             // Call to webservice and
@@ -150,12 +148,8 @@ angular.module('kanbanApp')
             for (var item in elems) {
                 if (elems[item].taskOrder < tmpPos) {
                     tmpPos = elems[item].taskOrder;
+                    return true;
                 }
-            }
-
-            if (tmpPos < pos)
-            {
-                return true;
             }
             return false;
         };
@@ -166,12 +160,8 @@ angular.module('kanbanApp')
             for (var item in elems) {
                 if (elems[item].taskOrder > tmpPos) {
                     tmpPos = elems[item].taskOrder;
+                    return true;
                 }
-            }
-
-            if (tmpPos > pos)
-            {
-                return true;
             }
             return false;
         };
