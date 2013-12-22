@@ -95,7 +95,7 @@ angular.module('kanbanApp')
 
         $scope.goLeft = function (id, pos) {
             alert('Item ' + id + ' has been moved left ' + pos);
-            // Call to webservice and
+            // Call to webservice andg
 
             // Refresh datas...
             $scope.stepsObjects = kanbanService.getTasks();

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
 				"web",
 				"webdrac"
 			],
@@ -155,15 +171,155 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 4521,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 951,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.css",
+			"settings":
+			{
+				"buffer_size": 814,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "readme.txt",
+			"settings":
+			{
+				"buffer_size": 957,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Sample Markdown Cheat Sheet\n=========================== \n\nThis is a sample markdown file to help you write Markdown quickly :)\n\nIf you use the fabulous [Sublime Text 2/3 editor][ST] along with the [Markdown Preview plugin][MarkdownPreview], open your ST2 Palette with `CMD+P` then choose `Markdown Preview in browser` to see the result in your browser.\n\n## Text basics\nthis is *italic* and this is **bold** .  another _italic_ and another __bold__\n\nthis is `important` text. and percentage signs : % and `%`\n\nThis is a paragraph with a footnote (builtin parser only). [^note-id]\n\nInsert `[ toc ]` without spaces to generate a table of contents (builtin parsers only).\n\n## Indentation\n> Here is some indented text\n>> even more indented\n\n## Titles\n# Big title (h1)\n## Middle title (h2)\n### Smaller title (h3)\n#### and so on (hX)\n##### and so on (hX)\n###### and so on (hX)\n\n## Example lists (1)\n\n - bullets can be `-`, `+`, or `*`\n - bullet list 1\n - bullet list 2\n    - sub item 1\n    - sub item 2\n\n        with indented text inside\n\n - bullet list 3\n + bullet list 4\n * bullet list 5\n\n## Links\n\nThis is an [example inline link](http://lmgtfy.com/) and [another one with a title](http://lmgtfy.com/ \"Hello, world\").\n\nLinks can also be reference based : [reference 1][ref1] or [reference 2 with title][ref2].\n\nReferences are usually placed at the bottom of the document\n\n## Images\n\nA sample image :\n\n![revolunet logo](http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg \"revolunet logo\")\n\nAs links, images can also use references instead of inline links :\n\n![revolunet logo][revolunet-logo]\n\n\n## Code\n\nIt's quite easy to show code in markdown files.\n\nBackticks can be used to `highlight` some words.\n\nAlso, any indented block is considered a code block.  If `enable_highlight` is `true`, syntax highlighting will be included (for the builtin parser - the github parser does this automatically).\n\n    <script>\n        document.location = 'http://lmgtfy.com/?q=markdown+cheat+sheet';\n    </script>\n\n## Math\n\nWhen `enable_mathjax` is `true`, inline math can be included \\\\(\\frac{\\pi}{2}\\\\) $\\pi$\n\nAlternatively, math can be written on its own line:\n\n$$F(\\omega) = \\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{\\infty} f(t) \\, e^{ - i \\omega t}dt$$\n\n\\\\[\\int_0^1 f(t) \\mathrm{d}t\\\\]\n\n\\\\[\\sum_j \\gamma_j^2/d_j\\\\]\n\n\n\n## GitHub Flavored Markdown\n\nIf you use the Github parser, you can use some of [Github Flavored Markdown][gfm] syntax :\n\n * User/Project@SHA: revolunet/sublimetext-markdown-preview@7da61badeda468b5019869d11000307e07e07401\n * User/Project#Issue: revolunet/sublimetext-markdown-preview#1\n * User : @revolunet\n\nSome Python code :\n\n```python\nimport random\n\nclass CardGame(object):\n    \"\"\" a sample python class \"\"\"\n    NB_CARDS = 32\n    def __init__(self, cards=5):\n        self.cards = random.sample(range(self.NB_CARDS), 5)\n        print 'ready to play'\n```\n\nSome Javascript code :\n\n```js\nvar config = {\n    duration: 5,\n    comment: 'WTF'\n}\n// callbacks beauty un action\nasync_call('/path/to/api', function(json) {\n    another_call(json, function(result2) {\n        another_another_call(result2, function(result3) {\n            another_another_another_call(result3, function(result4) {\n                alert('And if all went well, i got my result :)');\n            });\n        });\n    });\n})\n```\n\nThe Github Markdown also brings some [nice Emoji support][emoji] : :+1: :heart: :beer:\n\n[^note-id]: This is the text of the note. \n\n## Parsers and Extensions\n\nMarkdown Preview comes with **Python-Markdown** and **Markdown2** preloaded.\n\n### *Python-Markdown*\n\nThe [Python-Markdown Parser][] provides support for several extensions.\n\n[Python-Markdown Parser]: https://github.com/waylan/Python-Markdown\n\n#### Extra Extensions\n\n* `abbr` -- [Abbreviations][]\n* `attr_list` -- [Attribute Lists][]\n* `def_list` -- [Definition Lists][]\n* `fenced_code` -- [Fenced Code Blocks][]\n* `footnotes` -- [Footnotes][]\n* `tables` -- [Tables][]\n* `smart_strong` -- [Smart Strong][]\n\n[Abbreviations]: http://pythonhosted.org/Markdown/extensions/abbreviations.html\n[Attribute Lists]: http://pythonhosted.org/Markdown/extensions/attr_list.html\n[Definition Lists]: http://pythonhosted.org/Markdown/extensions/definition_lists.html\n[Fenced Code Blocks]: http://pythonhosted.org/Markdown/extensions/fenced_code_blocks.html\n[Footnotes]: http://pythonhosted.org/Markdown/extensions/footnotes.html\n[Tables]: http://pythonhosted.org/Markdown/extensions/tables.html\n[Smart Strong]: http://pythonhosted.org/Markdown/extensions/smart_strong.html\n\n\nYou can enable them all at once using the `extra` keyword.\n\n    extensions: [ 'extra' ]\n\nIf you want all the extras plus the `toc` extension,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown',\n        extensions: ['extra', 'toc'],\n        ...\n    }\n\n\n#### Other Extensions\n\nThere are also some extensions that are not included in Markdown Extra\nbut come in the standard Python-Markdown library.\n\n* `code-hilite` -- [CodeHilite][]\n* `html-tidy` -- [HTML Tidy][]\n* `header-id` -- [HeaderId][]\n* `meta_data` -- [Meta-Data][]\n* `nl2br` -- [New Line to Break][]\n* `rss` -- [RSS][]\n* `sane_lists` -- [Sane Lists][]\n* `toc` -- [Table of Contents][]\n* `wikilinks` -- [WikiLinks][]\n\n[CodeHilite]:  http://pythonhosted.org/Markdown/extensions/code_hilite.html\n[HTML Tidy]:  http://pythonhosted.org/Markdown/extensions/html_tidy.html\n[HeaderId]:  http://pythonhosted.org/Markdown/extensions/header_id.html\n[Meta-Data]:  http://pythonhosted.org/Markdown/extensions/meta_data.html\n[New Line to Break]:  http://pythonhosted.org/Markdown/extensions/nl2br.html\n[RSS]:  http://pythonhosted.org/Markdown/extensions/rss.html\n[Sane Lists]:  http://pythonhosted.org/Markdown/extensions/sane_lists.html\n[Table of Contents]:  http://pythonhosted.org/Markdown/extensions/toc.html\n[WikiLinks]:  http://pythonhosted.org/Markdown/extensions/wikilinks.html\n\n#### 3rd Party Extensions\n\n\n*Python-Markdown* is designed to be extended.\nJust fork this repo and add your extensions inside the `.../Packages/Markdown Preview/markdown/extensions/` folder.\n\nCheck out the list of [3rd Party extensions](\nhttps://github.com/waylan/Python-Markdown/wiki/Third-Party-Extensions).\n\n\n#### Default Extensions\n\nThe default extensions are:\n\n* `footnotes` -- [Footnotes]\n* `toc` -- [Table of Contents]\n* `fenced_code` -- [Fenced Code Blocks] \n* `tables` -- [Tables]\n\nUse the `default` keyword, to select them all.\nIf you want all the defaults plus the `definition_lists` extension,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown',\n        extensions: ['default', 'definition_lists'],\n        ...\n    }\n\n\n### *Markdown2*\n\nThe [Markdown2 Parser][] also provides support for extensions, known as [Extras][].   \nYou can configure the list of extras you want to use inside the package settings.\n\n[Markdown2 Parser]: https://github.com/trentm/python-markdown2\n\n\n#### Default Extras\n\nThe default extras are:\n\n* `footnotes` -- [Footnotes][Footnotes Extra]\n* `toc` -- Table of Contents\n* `fenced-code-blocks` -- [Fenced CodeBlocks][]\n* `cuddled-lists` -- [Cuddled Lists][]\n\n[Footnotes Extra]:      https://github.com/trentm/python-markdown2/wiki/footnotes\n[Fenced CodeBlocks]:    https://github.com/trentm/python-markdown2/wiki/fenced-code-blocks\n[Cuddled Lists]:        https://github.com/trentm/python-markdown2/wiki/cuddled-lists\n\n\nYou can enable all default extras at once using the `default` keyword.\nIf you want all the default extras plus the 'wiki-table' extra,\nyour settings would look like this:\n\n    {\n        ...\n        parser: 'markdown2',\n        extensions: ['default', 'wiki-table'],\n        ...\n    }\n\n\n#### Other Extras\n\nFor a complete list of extras please checkout the [Extras Wiki Page][Extras].\n\n[Extras]:   https://github.com/trentm/python-markdown2/wiki/Extras\n\n\n## Examples\n\n\n### Tables\n\nThe `tables` extension of the *Python-Markdown* parser is activated by default,\nbut is currently **not** available in *Markdown2*.\n\nThe syntax was adopted from the [php markdown project](http://michelf.ca/projects/php-markdown/extra/#table),\nand is also used in github flavoured markdown.\n\n| Year | Temperature (low) | Temperature (high) |  \n| ---- | ----------------- | -------------------|  \n| 1900 |               -10 |                 25 |  \n| 1910 |               -15 |                 30 |  \n| 1920 |               -10 |                 32 |  \n\n\n### Wiki Tables\n\nIf you are using *Markdown2* with the `wiki-tables` extra activated you should see a table below:\n\n|| *Year* || *Temperature (low)* || *Temperature (high)* ||  \n||   1900 ||                 -10 ||                   25 ||  \n||   1910 ||                 -15 ||                   30 ||  \n||   1920 ||                 -10 ||                   32 ||  \n\n\n### Definition Lists\n\nThis example requires *Python Markdown*'s `def_list` extension.\n\nApple\n:   Pomaceous fruit of plants of the genus Malus in \n    the family Rosaceae.\n\nOrange\n:   The fruit of an evergreen tree of the genus Citrus.\n\n\n## About\n\nThis plugin and this sample file is proudly brought to you by the [revolunet team][revolunet]\n\n [ref1]: http://revolunet.com\n [ref2]: http://revolunet.com \"rich web apps\"\n [MarkdownREF]: http://daringfireball.net/projects/markdown/basics\n [MarkdownPreview]: https://github.com/revolunet/sublimetext-markdown-preview\n [ST]: http://sublimetext.com\n [revolunet]: http://revolunet.com\n [revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg \"revolunet logo\"\n [gfm]: http://github.github.com/github-flavored-markdown/\n [emoji]: http://www.emoji-cheat-sheet.com/\n\n",
+			"settings":
+			{
+				"buffer_size": 9610,
+				"line_ending": "Windows",
+				"name": "Markdown Cheatsheet",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 319,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 3834,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "upgrade readmem\n\n# update readme\n# New readme file\n# Initial commit\n# --------------\n# Please enter the commit message for your changes. Everything below\n# this paragraph is ignored, and an empty message aborts the commit.\n# Just close the window to accept your message.\ndiff --git a/readme.md b/readme.md\nindex 968a3a0..18c44d3 100644\n--- a/readme.md\n+++ b/readme.md\n@@ -2,7 +2,7 @@\n \n Welcome to a personnal kanban frontend layout.\n \n-(https://github.com/gilloud/kanban/blob/master/notes/Capture2-210m.PNG \"Kanban\")\n+[Screenshoot kanban](https://github.com/gilloud/kanban/blob/master/notes/Capture2-210m.PNG)\n  \n ##Here :##\n - No data management functionnality, you need to adapt it to your needs.\ndiff --git a/readme.txt b/readme.txt\nindex a0dfffb..e438977 100644\n--- a/readme.txt\n+++ b/readme.txt\n@@ -1,3 +1,6 @@\n+\n+\n+\n J1 :\n Début du projet 21/12 : 13:30 - 14:11                       ### 40m\n     structure, grunt, yehoman,",
+			"settings":
+			{
+				"buffer_size": 929,
+				"line_ending": "Windows",
+				"name": "COMMIT_EDITMSG",
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "Packages/JSHint/JSHint.sublime-build",
 	"command_palette":
 	{
-		"height": 110.0,
+		"height": 310.0,
 		"selected_items":
 		[
 			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"mark",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ja",
+				"Format: Javascript"
+			],
+			[
+				"ht",
+				"Tidy HTML"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
 				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"jsin",
 				"JSON Reindent: reindent file or selection"
 			],
 			[
@@ -191,10 +347,6 @@
 				"Set Syntax: CSS"
 			],
 			[
-				"java",
-				"Format: Javascript"
-			],
-			[
 				"lor",
 				"Snippet: Lorem ipsum"
 			],
@@ -216,10 +368,6 @@
 			],
 			[
 				"for",
-				"Format: Javascript"
-			],
-			[
-				"jav",
 				"Format: Javascript"
 			],
 			[
@@ -245,10 +393,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"ja",
-				"Format: Javascript"
 			],
 			[
 				"js",
@@ -299,10 +443,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"jsin",
-				"JSLint"
-			],
-			[
 				"packa",
 				"Package Control: Remove Package"
 			],
@@ -333,10 +473,6 @@
 			[
 				"jsli",
 				"JSLint"
-			],
-			[
-				"ht",
-				"HTML: Wrap Selection With Tag"
 			],
 			[
 				"Package Control: ",
@@ -372,6 +508,12 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/kanban/readme.md",
+		"/C/wamp/www/kanban/.jshintrc",
+		"/C/wamp/www/kanban/app/bower_components/angular/.bower.json",
+		"/C/wamp/www/kanban/app/bower_components/angular/angular.min.js",
+		"/C/wamp/www/kanban/app/scripts/app.js",
+		"/C/wamp/www/kanban/readme.txt",
 		"/C/wamp/www/webdrac-git4/app/views/partials/attributes/lov/lov_edit.html",
 		"/C/Users/pilloudg/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/C/wamp/www/webdrac-git4/app/views/partials/intersection.html",
@@ -493,13 +635,7 @@
 		"/C/wamp/www/webdrac/src/Webdrac/Hello.php",
 		"/C/wamp/www/webdrac/web/.htaccess",
 		"/C/wamp/www/webdrac/vendor/peej/tonic/src/Tyrell/Hello.php",
-		"/C/wamp/www/webdrac/src/webdrac.php",
-		"/C/wamp/www/webdrac/vendor/autoload.php",
-		"/C/wamp/www/webdrac/vendor/composer/autoload_real.php",
-		"/C/wamp/www/webdrac/vendor/composer/ClassLoader.php",
-		"/C/wamp/www/webdrac/vendor/composer/autoload_classmap.php",
-		"/C/wamp/www/webdrac/vendor/composer/autoload_namespaces.php",
-		"/C/wamp/www/webdrac/vendor/peej/tonic/src/Tonic/Resource.php"
+		"/C/wamp/www/webdrac/src/webdrac.php"
 	],
 	"find":
 	{
@@ -518,6 +654,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"link",
+			"123",
+			"drop",
+			"dataTr",
+			"data",
+			"scop",
+			"iso",
+			"isola",
+			"bin",
+			"order",
+			"\"",
+			"'",
 			"futur",
 			"capac",
 			"column",
@@ -625,6 +773,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"taskOrder",
+			"'",
+			"\"",
 			"action",
 			"webdracRoute"
 		],
@@ -637,8 +788,249 @@
 	"groups":
 	[
 		{
+			"selected": 8,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/controllers/main.js",
+					"settings":
+					{
+						"buffer_size": 4521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3206,
+								3206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": true,
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1448.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/main.html",
+					"settings":
+					{
+						"buffer_size": 951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								951,
+								951
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/main.css",
+					"settings":
+					{
+						"buffer_size": 814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "readme.txt",
+					"settings":
+					{
+						"buffer_size": 957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 9610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1093,
+								1093
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 644.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/scripts/app.js",
+					"settings":
+					{
+						"buffer_size": 319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/index.html",
+					"settings":
+					{
+						"buffer_size": 3834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1274,
+								1290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 169.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "readme.md",
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git\\syntax/Git Commit Message.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -675,7 +1067,11 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 120.0
+		"height": 241.0
+	},
+	"output.git":
+	{
+		"height": 284.0
 	},
 	"replace":
 	{
