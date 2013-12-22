@@ -28,7 +28,7 @@ h1 {
 }
 .kanban th {
     border : 5px solid grey;
-
+    background-color: lightgrey;
 }
 
 .task {
@@ -40,9 +40,12 @@ h1 {
 }
 .task .owner {
     font-weight: bold;
+        line-height: 9px;
+
 }
 .task .description {
     font-size: 0.8em;
+    line-height: 9px;
 }
 
 .task h4,.task p {
@@ -52,4 +55,10 @@ h1 {
 .task-menu, .task-menu a {
     color : white;
     text-align: right;
+        line-height: 9px;
+
+}
+
+footer p {
+    text-align: center;
 }
