@@ -1,4 +1,4 @@
-  <h1>&#310;&#259;&#326;b&#261;&#324; dashboard !</h1>
+<h1>{{application_name}} !</h1>
 <table class="kanban">
     <tr>
         <th style="width:{{colWidth()}}%" ng-repeat="stepsObject in stepsObjects | orderBy:'taskOrder'">{{stepsObject.title}}</th>
@@ -8,8 +8,8 @@
 
 
             <div class="task" ng-repeat="object in stepsObject.value">
-                <h4>&#10026; {{object.title}}</h4>
-                <p class="description">{{object.description}}</p>
+                <h4 title="{{object.title}}">&#10026; {{object.title | cut:true:30}}</h4>
+                <p class="description" title="{{object.description}}">{{object.description | cut:true:100}}</p>
                 <p class="owner">{{object.owner}}</p>
                 <p class="task-menu">
                     <a href="" ng-if="hasLeft(stepsObject.taskOrder)" ng-click="goLeft(object.id,stepsObject.taskOrder)">&#10096;</a> 
@@ -20,4 +20,4 @@
         </td>
     </tr>
 </table>
-<footer><p>&#310;&#259;&#326;b&#261;&#324; dashboard... designed for your needs !</p></footer>
+<footer><p>{{application_name}} designed for your needs !</p></footer>
